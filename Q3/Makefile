@@ -1,3 +1,3 @@
-tester: tester.c isMirrored.c 
-	gcc -o tester tester.c isMirrored.c -I.
+tester: tester.c q3.c 
+	gcc -o tester tester.c q3.c -I.
 

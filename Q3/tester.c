@@ -1,12 +1,18 @@
 # include <stdio.h>
-# include "isMirrored.h"
+# include "q3.h"
 
 int main(int argc, char *argv[])
 {
-printf("5 is mirrored: %d\n",isMirrored(5));
-printf("10 is mirrored: %d\n",isMirrored(10));
-printf("17771 is mirrored: %d\n",isMirrored(17771));
-printf("2442 is mirrored: %d\n",isMirrored(2442));
+float x, y, z;
+
+setTriple(1, 2, 3, &x, &y, &z);
+
+addTriple(4, 5, 6, &x, &y, &z);
+
+addTriple(x, y, z, &x, &y, &z);
+
+
+printf("%f,%f,%f\n",x,y,z);
 
 return 0;
 }
